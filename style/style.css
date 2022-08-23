@@ -14,6 +14,7 @@
     --third-bg-color: #2F303A;
     --transparent-white-color: rgba(255, 255, 255, 0.6);
     --box-shadow-card: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    --box-shadov-hover-card: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     --box-shadow-filter: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     --icon-color: #AFB1B8;
 }
@@ -554,7 +555,14 @@ img {
 .project-item {
     width: 370px;
     border: 1px solid #EEEEEE;
+    cursor: pointer;
 }
+
+.project-item:hover,
+.project-item:focus {
+    box-shadow: var(--box-shadov-hover-card);
+}
+
 
 .project-item:not(:nth-child(3n)) {
     margin-right: 30px;
