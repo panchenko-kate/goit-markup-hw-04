@@ -254,11 +254,15 @@ img {
 }
 
 .icon-features-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 270px;
   height: 120px;
 
   background-color: var(--secondary-bg-color);
-  padding: 25px 100px;
+  /* padding: 25px 100px; */
   margin-bottom: 30px;
 
   border-radius: 4px;
@@ -381,10 +385,11 @@ img {
 
 .customers-bg {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
   background-color: var(--primary-bg-color);
   color: var(--icon-color);
   border: 1px solid #afb1b8;
